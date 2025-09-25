@@ -1,0 +1,149 @@
+/* Variables CSS en español */
+:root {
+    --color-primario: #00ff00;
+    --fondo-oscuro: rgba(0, 0, 0, 0.9);
+    --fondo-primario-transparente: rgba(0, 255, 0, 0.1);
+    --texto-blanco: #fff;
+    --sombra-resplandor: 0 0 10px var(--color-primario);
+    --sombra-texto: 0 0 20px var(--color-primario);
+    --sombra-hover: 0 0 8px var(--color-primario);
+    --borde-primario: 2px solid var(--color-primario);
+    --transicion-suave: all 0.3s ease;
+    --tamaño-fuente-logo: 1.1rem;
+    --tamaño-fuente-enlace: 1rem;
+    --tamaño-fuente-titulo-pequeño: 2rem;
+    --tamaño-fuente-titulo-grande: 4rem;
+    --espaciado-navbar: 0.8rem 0;
+    --espaciado-logo: 0.4rem 0.8rem;
+    --espaciado-enlace: 0.5rem 1rem;
+    --margen-enlace: 0 0.3rem;
+    --radio-borde-pequeño: 5px;
+    --radio-borde-mediano: 6px;
+}
+
+/* Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo */
+body {
+    background-image: url('../assets/img/inicio.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--texto-blanco);
+}
+
+/*! NavBar */
+.custom-navbar {
+    background: var(--fondo-oscuro) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: var(--borde-primario);
+    padding: var(--espaciado-navbar);
+}
+
+.brand-logo {
+    font-size: var(--tamaño-fuente-logo);
+    font-weight: bold;
+    color: var(--color-primario);
+    text-shadow: var(--sombra-resplandor);
+    border: 1px solid var(--color-primario);
+    padding: var(--espaciado-logo);
+    border-radius: var(--radio-borde-mediano);
+    background: var(--fondo-primario-transparente);
+    display: inline-block;
+    line-height: 1;
+}
+
+/* Enlaces del navbar */
+.navbar-nav .nav-link {
+    color: var(--texto-blanco) !important;
+    font-weight: 500;
+    font-size: var(--tamaño-fuente-enlace);
+    padding: var(--espaciado-enlace) !important;
+    border-radius: var(--radio-borde-pequeño);
+    transition: var(--transicion-suave);
+    position: relative;
+    margin: var(--margen-enlace);
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--color-primario) !important;
+    text-shadow: var(--sombra-hover);
+}
+
+.navbar-nav .nav-link::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: var(--color-primario);
+    transition: var(--transicion-suave);
+}
+
+.navbar-nav .nav-link:hover::before {
+    width: 100%;
+    left: 0;
+    box-shadow: var(--sombra-hover);
+}
+
+/* Boton de Hamburguesa */
+.custom-toggler {
+    border-color: var(--color-primario);
+    border-width: 1px;
+    padding: 0.25rem 0.5rem;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%2300ff00' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='m4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    width: 1.2em;
+    height: 1.2em;
+}
+
+/* Títulos principales */
+.main-title-small {
+    font-size: var(--tamaño-fuente-titulo-pequeño);
+    opacity: 0.8;
+    text-shadow: var(--sombra-texto);
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.main-title-large {
+    font-size: var(--tamaño-fuente-titulo-grande);
+    text-shadow: var(--sombra-texto);
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    :root {
+        --tamaño-fuente-titulo-pequeño: 2.5rem;
+        --tamaño-fuente-titulo-grande: 5.5rem;
+        --tamaño-fuente-logo: 1rem;
+        --espaciado-logo: 0.3rem 0.6rem;
+    }
+    
+    /* Centrar elementos del navbar en móvil */
+    .navbar-nav {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .navbar-nav .nav-item {
+        margin: 0.5rem 0;
+    }
+    
+    .navbar-nav .nav-link {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+}

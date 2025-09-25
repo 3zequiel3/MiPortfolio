@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Ezequiel Gonzalez</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style-vistas.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <span class="brand-logo">EG</span>
+                </a>
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre-mi.html">Sobre mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="proyectos.html">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="contact-container">
+                <!-- Hexágono con título -->
+                <div class="hexagon-container">
+                    <div class="hexagon">
+                        <h1 class="hexagon-title">Contacto</h1>
+                    </div>
+                </div>
+                
+                <!-- Contenido de contacto -->
+                <div class="contact-content">
+                    <!-- Campo de email -->
+                    <div class="email-container">
+                        <input type="email" value="3zegonzalez@gmail.com" readonly class="email-input">
+                        <button class="copy-btn" onclick="copyEmail()" title="Copiar email">
+                            <img src="../assets/icons/clipboard.svg" alt="Copiar" class="icon">
+                        </button>
+                    </div>
+                    
+                    <!-- Botones de redes sociales -->
+                    <div class="social-buttons">
+                        <a href="https://wa.me/TU_NUMERO_AQUI" target="_blank" class="social-btn whatsapp-btn" title="WhatsApp">
+                            <img src="../assets/icons/whatsapp.svg" alt="WhatsApp" class="icon">
+                        </a>
+                        
+                        <a href="https://github.com/TU_USUARIO" target="_blank" class="social-btn github-btn" title="GitHub">
+                            <img src="../assets/icons/github.svg" alt="GitHub" class="icon">
+                        </a>
+                        
+                        <a href="https://linkedin.com/in/TU_PERFIL" target="_blank" class="social-btn linkedin-btn" title="LinkedIn">
+                            <img src="../assets/icons/linkedin.svg" alt="LinkedIn" class="icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer></footer>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/contacto.js"></script>
+</body>
+</html>

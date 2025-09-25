@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos - Ezequiel Gonzalez</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style-vistas.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <span class="brand-logo">EG</span>
+                </a>
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre-mi.html">Sobre mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="proyectos.html">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-fluid justify-content-center">
+            <div class="projects-container">
+                <!-- Hexágono con título -->
+                <div class="hexagon-container">
+                    <div class="hexagon">
+                        <h1 class="hexagon-title">Proyectos</h1>
+                    </div>
+                </div>
+
+                <!-- Grid de proyectos -->
+                <div class="projects-grid">
+                    <div class="project-card" data-bs-toggle="modal" data-bs-target="#projectModal" data-project="1">
+                        <div class="project-content">
+                            <p>Información no disponible</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-bs-toggle="modal" data-bs-target="#projectModal" data-project="2">
+                        <div class="project-content">
+                            <p>Información no disponible</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-bs-toggle="modal" data-bs-target="#projectModal" data-project="3">
+                        <div class="project-content">
+                            <p>Información no disponible</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-bs-toggle="modal" data-bs-target="#projectModal" data-project="4">
+                        <div class="project-content">
+                            <p>Información no disponible</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-bs-toggle="modal" data-bs-target="#projectModal" data-project="5">
+                        <div class="project-content">
+                            <p>Información no disponible</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-bs-toggle="modal" data-bs-target="#projectModal" data-project="6">
+                        <div class="project-content">
+                            <p>Información no disponible</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal para mostrar información del proyecto -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content project-modal">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel">Proyecto</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Información del proyecto no disponible por el momento.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <footer>
+        <div class="container">
+            <div class="footer-content">
+                <span class="footer-logo">EG</span>
+                <span class="footer-separator">|</span>
+                <span class="footer-text">Desarrollando el futuro, una línea de código a la vez.</span>
+                <span class="footer-separator">|</span>
+                <span class="footer-copyright">&copy; 2024 Ezequiel Gonzalez. Todos los derechos reservados.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
